@@ -6,6 +6,7 @@ import '../footer.dart';
 import '../header.dart';
 import '../model/post.dart';
 import '../myAppBar.dart';
+import '../tweetWall.dart';
 import '../util/callTweetApi.dart';
 
 class FeedScreen extends StatelessWidget {
@@ -21,7 +22,7 @@ class FeedScreen extends StatelessWidget {
           body: Column(
             children: [
               Header(),
-              PostWall(),
+              TweetWall(),
             ],
           ),
           bottomNavigationBar: const Footer(),

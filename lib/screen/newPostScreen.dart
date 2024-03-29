@@ -1,13 +1,8 @@
-import 'package:cours_flutter_provider/newPostForm.dart';
-import 'package:cours_flutter_provider/postWall.dart';
+import 'package:cours_flutter_provider/create_tweet_form.dart';
 import 'package:flutter/material.dart';
-import 'package:sn_progress_dialog/progress_dialog.dart';
 
 import '../footer.dart';
-import '../header.dart';
-import '../model/post.dart';
 import '../myAppBar.dart';
-import '../util/callTweetApi.dart';
 
 class NewPostScreen extends StatelessWidget {
 
@@ -21,7 +16,7 @@ class NewPostScreen extends StatelessWidget {
           ),
           body: Column(
             children: [
-              NewPostForm(),
+              CreateTweetForm(),
             ],
           ),
           bottomNavigationBar: const Footer(),

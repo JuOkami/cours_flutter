@@ -2,8 +2,6 @@ import 'package:cours_flutter_provider/postProvider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'barIconButton.dart';
-import 'barImageButton.dart';
 import 'barTextButton.dart';
 
 class Header extends StatelessWidget {
@@ -34,7 +32,9 @@ class Header extends StatelessWidget {
                 height: 40,
                 child: IconButton(
                   color : Colors.white,
-                  onPressed: () => {Navigator.pushNamed(context, "/new")},
+                  onPressed: () async {
+                    await Navigator.pushNamed(context, "/new");
+                  },
                   icon: Icon(Icons.create_rounded),
                 ),
               ),
